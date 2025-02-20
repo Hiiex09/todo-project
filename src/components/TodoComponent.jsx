@@ -95,3 +95,9 @@ const TodoComponent = () => {
 };
 
 export default TodoComponent;
+/*  
+ - git config --global core.autocrlf true,
+ - npm install gh-pages --save,
+ -  "homepage":"https://Hiiex09.github.io/todo-project",
+- 
+ */
