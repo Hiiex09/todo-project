@@ -99,5 +99,6 @@ export default TodoComponent;
  - git config --global core.autocrlf true,
  - npm install gh-pages --save,
  -  "homepage":"https://Hiiex09.github.io/todo-project",
-- 
+ -  "predeploy":"npm run build",
+ -  "deploy": "gh-pages -d dist",
  */
