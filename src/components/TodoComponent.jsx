@@ -18,10 +18,10 @@ const TodoComponent = () => {
   };
 
   return (
-    <div className="grid grid-cols-2 min-h-screen">
+    <div className="grid sm:grid-1 lg:grid-cols-2">
       {/* Left Container */}
-      <div className="flex flex-col justify-center items-center bg-neutral-content h-screen p-5">
-        <div className="w-full max-w-md">
+      <div className="flex  justify-center bg-neutral-content min-h-screen p-5">
+        <div className="w-full max-w-full">
           <div className="card bg-base-100 shadow-xl">
             <div className="card-body">
               <h2 className="card-title text-center">Add New Todo</h2>
@@ -33,7 +33,7 @@ const TodoComponent = () => {
                   <input
                     type="text"
                     placeholder="Title"
-                    className="input input-bordered w-full"
+                    className="input input-bordered w-full "
                     value={addTask.title}
                     onChange={(e) =>
                       setAddTask({ ...addTask, title: e.target.value })
@@ -66,11 +66,11 @@ const TodoComponent = () => {
       </div>
 
       {/* Right Container */}
-      <div className="h-screen bg-primary p-5 grid grid-cols-4 m-2 overflow-auto gap-2">
+      <div className="h-screen bg-primary p-2 flex flex-col gap-2">
         {todos && todos.length > 0 ? (
           todos.map((todo, i) => (
             <div
-              className="card bg-base-100 card-sm shadow-sm h-max-screen"
+              className="card bg-base-100 card-sm shadow-sm h-20 w-full"
               key={i}
             >
               <div className="card-body">
