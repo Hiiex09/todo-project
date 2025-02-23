@@ -1,14 +1,5 @@
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-import TodoComponent from "../components/TodoComponent";
-
 const Homepage = () => {
-  return (
-    <>
-      <Navbar />
-      <TodoComponent />
-    </>
-  );
+  return <div>Homepage</div>;
 };
 
 export default Homepage;
